@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axum Scholars | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+  <body class="page--contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__inner container">
+          <a class="brand" href="./index.html" aria-label="Axum Scholars Home">
+            <img class="brand__logo" src="./655578875_25758855597150447_8793712731819358752_n.jpg" alt="Axum Scholars logo" />
+            <span class="brand__text">Axum Scholars</span>
+          </a>
+
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+          </button>
+
+          <div id="navLinks" class="nav__links">
+            <a class="nav__link" href="./index.html">Home</a>
+            <a class="nav__link" href="./about.html">About</a>
+            <a class="nav__link" href="./founder.html">Founder</a>
+            <a class="nav__link" href="./course1.html">Course I</a>
+            <a class="nav__link" href="./course2.html">Course II</a>
+            <a class="nav__link" href="./course3.html">Course III</a>
+            <a class="nav__link" href="./resources.html">Resources</a>
+            <a class="nav__link is-active" href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="notes-section">
+        <div class="container">
+          <div class="notes-sheet contact-notes reveal" aria-label="Contact form notebook layout">
+            <div class="contact-header">
+              <h1 class="contact-header__title handwritten">Contact</h1>
+              <div class="founder-bg-note handwritten" style="justify-self: end; opacity: 0.85;">Feedback</div>
+            </div>
+
+            <div class="contact-layout">
+              <div class="contact-box">
+                <div class="contact-box__label handwritten">Send a message</div>
+
+                <form
+                  id="contact-form"
+                  class="contact-form"
+                  action="https://formsubmit.co/axum.scholars12@eauspark.org"
+                  method="post"
+                >
+                  <div class="contact-row">
+                    <label class="contact-field handwritten">
+                      <span class="contact-field__label">Full name</span>
+                      <input class="contact-input" type="text" name="name" placeholder="Your name" />
+                    </label>
+                    <label class="contact-field handwritten">
+                      <span class="contact-field__label">Email</span>
+                      <input class="contact-input" type="email" name="email" placeholder="you@example.com" />
+                    </label>
+                  </div>
+
+                  <label class="contact-field handwritten">
+                    <span class="contact-field__label">Message</span>
+                    <textarea class="contact-textarea" name="message" placeholder="Write your message..." rows="6"></textarea>
+                  </label>
+
+                  <div class="contact-actions">
+                    <button class="contact-submit" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+
+              <aside class="contact-box">
+                <div class="contact-aside-title handwritten">Contact us</div>
+                <p class="handwritten">
+                  Share your question and we will guide you to the right next step.
+                </p>
+                <p class="handwritten" style="margin-top: 0.8rem;">
+                  Email: axum.scholars12@eauspark.org
+                </p>
+                <p class="handwritten" style="margin-top: 0.6rem;">
+                  Location: Addis Ababa, Ethiopia
+                </p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--dark">
+      <div class="container footer__inner">
+        <div class="footer3">
+          <div class="footer3__col">
+            <div class="footer3__brand">
+              <img class="footer3__logo" src="./655578875_25758855597150447_8793712731819358752_n.jpg" alt="Axum Scholars logo" />
+              <span>Axum Scholars</span>
+            </div>
+            <p class="footer3__desc">
+              A platform created by high school students to help other students discover and access international scholarship opportunities.
+            </p>
+          </div>
+
+          <div class="footer3__col">
+            <div class="footer3__title">Featured Links</div>
+            <div class="footer3__links">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./founder.html">Founder</a>
+              <a href="./course1.html">Course I</a>
+              <a href="./course2.html">Course II</a>
+              <a href="./course3.html">Course III</a>
+              <a href="./resources.html">Resources</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer3__col">
+            <div class="footer3__title">Information</div>
+            <div class="footer3__info">
+              <div class="footer3__row">
+                <span class="footer3__key">Website</span>
+                <span class="footer3__val">www.eauspark.org</span>
+              </div>
+              <div class="footer3__row">
+                <span class="footer3__key">Location</span>
+                <span class="footer3__val">Addis Ababa, Ethiopia</span>
+              </div>
+              <div class="footer3__row">
+                <span class="footer3__key">Email</span>
+                <a class="footer3__val" href="mailto:axum.scholars12@eauspark.org">axum.scholars12@eauspark.org</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">&copy; Axum Scholars</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
