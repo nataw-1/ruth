@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <script defer src="./assets/js/main.js"></script>
   </head>
-  <body class="page--contact">
+  <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
@@ -44,59 +44,122 @@
     </header>
 
     <main id="main">
-      <section class="notes-section">
+      <section class="contact-page-section">
         <div class="container">
-          <div class="notes-sheet contact-notes reveal" aria-label="Contact form notebook layout">
-            <div class="contact-header">
-              <h1 class="contact-header__title handwritten">Contact</h1>
-              <div class="founder-bg-note handwritten" style="justify-self: end; opacity: 0.85;">Feedback</div>
+          <div class="contact-page-header reveal">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-form-card reveal">
+              <h2 class="contact-form-title">Send us a Message</h2>
+              
+              <form
+                id="contact-form"
+                class="contact-form-grid"
+                action="https://formsubmit.co/axum.scholars12@eauspark.org"
+                method="post"
+              >
+                <div class="contact-form-row">
+                  <div class="field">
+                    <label class="contact-label" for="name">Full Name</label>
+                    <input 
+                      id="name"
+                      class="contact-input" 
+                      type="text" 
+                      name="name" 
+                      placeholder="Your full name"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label class="contact-label" for="email">Email Address</label>
+                    <input 
+                      id="email"
+                      class="contact-input" 
+                      type="email" 
+                      name="email" 
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="contact-label" for="subject">Subject</label>
+                  <input 
+                    id="subject"
+                    class="contact-input" 
+                    type="text" 
+                    name="subject" 
+                    placeholder="What is this about?"
+                  />
+                </div>
+
+                <div class="field">
+                  <label class="contact-label" for="message">Your Message</label>
+                  <textarea 
+                    id="message"
+                    class="contact-textarea" 
+                    name="message" 
+                    placeholder="Write your message here..."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Axum Scholars" />
+                <input type="text" name="_honey" style="display:none" />
+
+                <div class="contact-form-actions">
+                  <button class="contact-submit-btn" type="submit">
+                    <span>Send Message</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                  </button>
+                </div>
+              </form>
             </div>
 
-            <div class="contact-layout">
-              <div class="contact-box">
-                <div class="contact-box__label handwritten">Send a message</div>
+            <aside class="contact-info-card reveal">
+              <h2 class="contact-info-title">Contact Info</h2>
+              <p class="contact-info-desc">
+                Prefer to reach out directly? Here's how you can connect with us.
+              </p>
 
-                <form
-                  id="contact-form"
-                  class="contact-form"
-                  action="https://formsubmit.co/axum.scholars12@eauspark.org"
-                  method="post"
-                >
-                  <div class="contact-row">
-                    <label class="contact-field handwritten">
-                      <span class="contact-field__label">Full name</span>
-                      <input class="contact-input" type="text" name="name" placeholder="Your name" />
-                    </label>
-                    <label class="contact-field handwritten">
-                      <span class="contact-field__label">Email</span>
-                      <input class="contact-input" type="email" name="email" placeholder="you@example.com" />
-                    </label>
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <div class="contact-info-icon contact-info-icon--email">&#9993;</div>
+                  <div class="contact-info-content">
+                    <div class="contact-info-label">Email</div>
+                    <div class="contact-info-value">
+                      <a href="mailto:axum.scholars12@eauspark.org">axum.scholars12@eauspark.org</a>
+                    </div>
                   </div>
+                </li>
 
-                  <label class="contact-field handwritten">
-                    <span class="contact-field__label">Message</span>
-                    <textarea class="contact-textarea" name="message" placeholder="Write your message..." rows="6"></textarea>
-                  </label>
-
-                  <div class="contact-actions">
-                    <button class="contact-submit" type="submit">Submit</button>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon contact-info-icon--location">&#128205;</div>
+                  <div class="contact-info-content">
+                    <div class="contact-info-label">Location</div>
+                    <div class="contact-info-value">Addis Ababa, Ethiopia</div>
                   </div>
-                </form>
-              </div>
+                </li>
 
-              <aside class="contact-box">
-                <div class="contact-aside-title handwritten">Contact us</div>
-                <p class="handwritten">
-                  Share your question and we will guide you to the right next step.
-                </p>
-                <p class="handwritten" style="margin-top: 0.8rem;">
-                  Email: axum.scholars12@eauspark.org
-                </p>
-                <p class="handwritten" style="margin-top: 0.6rem;">
-                  Location: Addis Ababa, Ethiopia
-                </p>
-              </aside>
-            </div>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon contact-info-icon--social">&#127760;</div>
+                  <div class="contact-info-content">
+                    <div class="contact-info-label">Follow Us</div>
+                    <div class="contact-info-value">@AxumScholars</div>
+                    <div class="contact-social-links">
+                      <a href="./resources.html#youtube" class="social-link-btn" aria-label="YouTube">&#9654;</a>
+                      <a href="./resources.html#telegram" class="social-link-btn" aria-label="Telegram">&#9992;</a>
+                      <a href="mailto:axum.scholars12@eauspark.org" class="social-link-btn" aria-label="Email">&#9993;</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
